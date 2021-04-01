@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view style="font-size: 48px">Restaurants</view>
+
+  <button type="primary" bindtap="toRestaurant" data-id="{{restaurant.id}}" wx:for="{{restaurants}}" wx:for-item="restaurant">
+    {{restaurant.name}}
+  </button>
+
+  <button style="margin-top: 25px;" bindtap="getPhoto" type="primary">Get Photo</button>
+
+</view>
